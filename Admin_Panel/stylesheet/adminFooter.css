@@ -1,0 +1,14 @@
+.adminFooter{
+	width:98%;
+	position:fixed;
+	right:0;
+	left:0;
+	bottom:0;
+	height:auto;
+	text-align:center;
+	background-color:#2c3e50;
+	color:white;
+	padding:1%;
+	font-size:1em;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}

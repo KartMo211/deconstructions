@@ -1,0 +1,16 @@
+.delBook{
+	width:100%;
+	height:30px;
+	background-color:#2980b9;
+	color:#fff;
+	border:none;
+	cursor: pointer;
+}
+h1.bookForm{
+	text-align:center;
+	color:#c0392b;
+	font-size:1.3em;
+	margin-bottom:-20px;
+	font-weight: bolder;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}

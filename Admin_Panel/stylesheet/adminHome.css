@@ -1,0 +1,70 @@
+table.adminInfo{
+	width:80%;
+	max-width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2%;
+	background-color: #ecf0f1;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+table.adminInfo caption{
+	font-size:2em;
+	text-align:left;
+	padding:3%;
+	font-weight: bolder;
+	border-collapse: collapse;
+}
+table.adminInfo th{
+	padding:2%;
+	font-size:1.1em;
+}
+table.adminInfo td{
+	text-align:center;
+	padding:2%;
+}
+.adminDelete{
+	width:80%;
+	max-width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2%;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.adminDelete span.delTitle{
+	padding:2%;
+	font-size:2em;
+	font-weight: bolder;
+}
+.adminDelete form{
+	background-color: #ecf0f1;
+	padding:2%;
+	margin-top:1%;
+	margin-bottom:2%;
+	text-align: center;
+}
+.adminDelete form input{
+	width:80%;
+	height:30px;
+	font-size:1.1em;
+}
+.adminDelete form button{
+	height:30px;
+	width:100px;
+	background-color:#2980b9;
+	border:none;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	color:white;
+	margin-top:2%;
+	font-size:1.1em;
+}
+.adminDelete span.delError{
+	font-size:1.1em;
+	text-align:center;
+	color:#c0392b;
+	display:block;
+}
+
+
+

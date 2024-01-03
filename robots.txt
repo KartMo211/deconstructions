@@ -1,0 +1,9 @@
+User-agent:*
+Disallow:/Admin_Panel/
+Disallow:/Images/
+Disallow:/mainPHP/
+Disallow:/stylesheet/
+Disallow:/MainNavbar/navbar.css
+Disallow:/MainNavbar/navbar.js
+
+Sitemap: http://www.srconstructions.in.net/sitemap-index.xml

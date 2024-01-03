@@ -1,0 +1,22 @@
+.adminMenu{
+	background-color:#f39c12;
+	width:100%;
+	overflow:auto;
+	position:fixed;
+	top:114px;
+}
+.adminMenu ul{
+	margin:5px;
+	list-style-type:none;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#2d3436;
+}
+.adminMenu ul li{
+	display:inline-block;
+	margin-right:10px;
+}
+@media screen and (max-width: 650px){
+	.adminMenu{
+		top:155px;
+	}
+}

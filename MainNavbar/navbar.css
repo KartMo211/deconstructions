@@ -1,0 +1,226 @@
+html,body{
+	margin:0;
+	padding:0;
+	min-height: 100%;
+	height:100%;
+	width:100%;
+}
+/*This is for decoration of the navbar*/
+nav{
+	width:100%;
+	z-index:5;
+}
+.beforenav{
+	width:100%;
+	height:110px;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	z-index:5;
+	background-color: rgba(255,255,255,0.95);
+}
+.navbar{
+	width:100%;
+	max-width:1500px;
+	height:110px;
+	position:fixed;
+	top:0;
+	left:50%;
+	transform: translateX(-50%);
+}
+.navbar .navbar-left{
+	position:absolute;
+	left:10%;
+	top:50%;
+	transform:translateY(-50%);
+	height:100px;
+}
+.navbar .navbar-left .navImg{
+	height:100%;
+	vertical-align: middle;
+}
+.navbar .navList{
+	text-align: center;
+	margin-top:40px;
+	margin-left:15%;
+}
+.navbar .navList li{
+	display:inline-block;
+	margin-right:1.5%;
+	margin-left:1.5%;
+	padding-right:1%;
+	padding-left:1%;
+	padding-bottom:5px;
+	font-family:"Trebuchet MS",sans-serif;
+	font-size:1.25em;
+	position:relative;
+}
+.navbar .navList li:nth-child(1){
+	display:none;
+	margin-top:-5px;
+}
+.navbar .navList a{
+	text-decoration: none;
+	color:#535c68;
+}
+/*Design of the button in Navbar*/
+.navbar .navList .navBtn, .navbar .navbar-left .navButton2{
+	background-color: transparent;
+	border:none;
+	font-size:1em;
+	color:#535c68;
+	transition:1s;
+}
+.navbar .navbar-left .navButton2{
+	display:none;
+}
+.navbar .navList .navBtn:hover, .navbar .navbar-left .navButton2:hover{
+	background-color:#0984e3;
+	color:white;
+}
+/*Hyperlink animation*/
+.navbar .navList li::before{
+	content: '';
+	position:absolute;
+	z-index:-1;
+	left:0;
+	width:0%;
+	height:100%;
+	transition:1s;
+	border-bottom:3px solid #7f8c8d;
+}
+/*Hover Effect for the animation of Hyperlink*/
+.navbar .navList li:hover::before{
+	width:100%;
+}
+/*Code for the Side Nav*/
+.sidemenu{
+    position:fixed;
+    top:0;
+    left:0;
+    overflow-x:hidden;
+    width:0px;
+    height:100%;
+    z-index:10;
+    background-color: white;
+    padding-top:50px;
+    transition:0.8s all;
+    border-right:1px solid black;
+}
+.sidemenu a{
+    display:block;
+    font-size:1.25em;
+    padding:10px;
+    padding-left:20px;
+    margin:3%;
+    font-family:Arial, Helvetica, sans-serif;
+    border-bottom:0.5px #bdc3c7 solid;
+    color:#57606f;
+    transition:color 1s;
+    text-decoration: none;
+}
+.sidemenu a.close{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:2em;
+    border:none;
+}
+.sidemenu a:hover{
+    color:#1e90ff;
+}
+.sidemenu button.book{
+    padding:20px;
+    width:150px;
+    border-radius:20px;
+    border:2px solid #3498db;
+    overflow:hidden;
+    position: relative;
+    margin-left:50px;
+    margin-top:20px;
+    font-size:1.2em;
+    background:none;
+    transition: 0.8s;
+}
+.sidemenu button.book:hover{
+    color:white;
+}
+.sidemenu button.book::before{
+    content:"";
+    position:absolute;
+    height:0%;
+    width:100%;
+    background-color: #3498db;
+    top:0;
+    left:0;
+    border-radius:0 0 50% 50%;
+    transition:0.8s;
+    z-index:-1;
+}
+.sidemenu button.book:hover::before{
+    height:180%;
+}
+/*Responsive code for navBar*/
+@media screen and (max-width: 1175px){
+	.navbar .navbar-left{
+		left:5%;
+	}
+	.navbar .navList{
+		text-align:right;
+		margin-right:50px;
+	}
+}
+@media screen and (max-width: 800px){
+	.navbar .navList li{
+		display:none;
+	}
+	.navbar .navList li:nth-child(1){
+		display:block;
+	}
+	.navbar .navList li:hover::before{
+		width:0%;
+	}
+}
+@media screen and (max-width: 550px){
+	.navbar .navbar-left{
+		left:0%;
+	}
+	.navbar .navList li{
+		padding:0;
+		margin:0;
+	}
+	.beforenav{
+		background-color:white;
+	}
+	.navbar .navbar-left .navButton2{
+		display:inline-block;
+	}
+	.navbar .navList li:nth-child(1){
+		display:none;
+	}
+	.navbar .navbar-left{
+		position:relative;
+		height:100%;
+		left:0;
+		text-align:center;
+	}
+}
+@media screen and (max-width:500px){
+	.beforenav{
+		height:80px;
+	}
+	.navbar{
+		height:80px;
+	}
+}
+@media screen and (max-width:350px){
+	.navbar .navbar-left{
+		height:80%;
+	}
+}
+
+
+
+
+

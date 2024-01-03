@@ -1,0 +1,87 @@
+.adminInstruct{
+	margin:0 auto;
+	background-color:#ffeaa7;
+	padding:2%;
+	width:85%;
+	margin-top:1%;
+	max-width:750px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.adminInstruct h1{
+	text-align:center;
+}
+.adminInstruct ul li{
+	font-size:1.1em;
+	margin-top:0.5%;
+	margin-bottom: 0.5%;
+}
+@media screen and (max-width: 450px){
+	.adminInstruct ul li{
+		font-size:1em;
+	}
+}
+/*Errors Design*/
+.adminErrors{
+	margin:0 auto;
+	width:90%;
+	font-size:1.5em;
+	margin-top:5px;
+	max-width:800px;
+	color:#c0392b;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:center;
+}
+
+/*Design of Form*/
+
+form.centerAlign{
+	margin:0 auto;
+	padding:5%;
+	padding-top:50px;
+	width:90%;
+	max-width:800px;
+}
+.adminInsFormHead{
+	padding:5%;
+	background-color: #ecf0f1;
+}
+.adminInsFormHead input[type="text"]{
+	display:block;
+	padding:10px;
+	width:90%;
+	margin-top:10px;
+	margin-bottom:20px;
+	font-size:1.1em;
+}
+.adminInsFormHead input[type="file"]{
+	display:block;
+	margin-bottom:20px;
+	font-size:0.9em;
+}
+.adminInsFormHead label.radio{
+	margin:10px;
+}
+.adminInsFormHead input[type="number"]{
+	display:block;
+	padding:5px;
+	font-size:1.1em;
+}
+.adminInsFormHead label{
+	padding-bottom:5px;
+	padding-top:20px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.1em;
+}
+.adminInsFormHead button{
+	height:40px;
+	width:100%;
+	background-color:#2980b9;
+	border:none;
+	color:white;
+	font-size:1.1em;
+}
+@media screen and (max-width: 400px){
+	.adminInsFormHead input[type="file"]{
+		font-size:0.75em;
+	}
+}
